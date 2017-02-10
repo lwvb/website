@@ -10,8 +10,5 @@ jspm_packages
 # Optional npm cache directory
 .npm
 
-# Visual studio code settings
-.vscode
-
 # Compiled js/css/html
 dist
