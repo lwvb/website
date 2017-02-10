@@ -14,4 +14,4 @@ jspm_packages
 .vscode
 
 # Compiled js/css/html
-dest
+dist
