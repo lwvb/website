@@ -1,0 +1,9 @@
+main {
+  display: flex;
+  padding: 0 10%;
+	flex-wrap: wrap;
+  margin-top: $content-margin-vertical;
+  @include media('<tablet') {
+    padding: 0 5%;
+  }
+}

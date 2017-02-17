@@ -4,7 +4,7 @@
   flex-wrap: wrap;
 }
 
-.taglist li {
+.taglist li, .tag {
   padding: $content-padding;
   margin: $content-margin;
   background-color: $color-white;
