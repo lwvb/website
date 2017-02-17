@@ -8,17 +8,18 @@
 @import 'vendors/includemedia';
 // @import 'vendors/jquery-ui';
 
+@import 'base/images';
 @import 'base/page';
 @import 'base/typography';
 
 // @import 'layout/navigation';
 // @import 'layout/grid';
-// @import 'layout/header';
+@import 'layout/header';
 // @import 'layout/footer';
 // @import 'layout/sidebar';
 // @import 'layout/forms';
 
-// @import 'components/buttons';
+@import 'components/taglist';
 // @import 'components/carousel';
 // @import 'components/cover';
 // @import 'components/dropdown';
