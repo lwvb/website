@@ -2,11 +2,9 @@
 @import 'abstracts/variables';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
-// @import 'abstracts/placeholders';
 
 // responsive mixin: https://css-tricks.com/dont-overthink-flexbox-grids/
 @import 'vendors/includemedia';
-// @import 'vendors/jquery-ui';
 
 @import 'base/images';
 @import 'base/page';
@@ -14,14 +12,9 @@
 
 @import 'layout/container';
 @import 'layout/header';
-// @import 'layout/footer';
-// @import 'layout/sidebar';
-// @import 'layout/forms';
 
+@import 'components/gridlist';
 @import 'components/taglist';
-// @import 'components/carousel';
-// @import 'components/cover';
-// @import 'components/dropdown';
 
 // @import 'pages/home';
 // @import 'pages/contact';

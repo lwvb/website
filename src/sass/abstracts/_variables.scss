@@ -13,10 +13,13 @@ $color-secondary: #FF7000;
 $color-white: #E8EAF6;
 $color-black: #0B0F33;
 
+// before every first element and after all elements
+$content-padding: 10px;
+$content-margin-vertical: 40px;
 
-$content-padding: 5px;
-$content-margin-vertical: 20px;
-$content-margin: $content-margin-vertical 5px;
-
-
+$breakpoints: (
+  'phone': 768px,
+  'tablet': 1024px,
+  'desktop': 1224px
+)
 

@@ -1,9 +1,7 @@
 main {
-  display: flex;
+  margin-bottom: $content-margin-vertical;
   padding: 0 10%;
-	flex-wrap: wrap;
-  margin-top: $content-margin-vertical;
-  @include media('<tablet') {
+	@include media('<tablet') {
     padding: 0 5%;
   }
 }

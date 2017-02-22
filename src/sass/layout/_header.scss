@@ -2,7 +2,6 @@ header {
   display: flex;
   padding: 0 10%;
 	flex-wrap: wrap;
-  margin-top: $content-margin-vertical;
   @include media('<tablet') {
     padding: 0 5%;
   }
@@ -16,18 +15,14 @@ header .small {
 }
 
 header .big{
-  flex: 2;
-}
-
-header .full-width {
-  width: 100%;
+  flex: 3;
 }
 
 header > :nth-child(even) {
   padding-left: 10%;
 }
 
-header .small {
-  
-
+header .taglist li {
+  margin-right: $content-margin-vertical;
+  margin-bottom: $content-margin-vertical;
 }

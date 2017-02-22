@@ -12,10 +12,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  padding: $content-padding;
-  margin: $content-margin;
-  background-color: $color-white;
-  background-clip: border-box;
   font-weight: $font-weight;
 }
 

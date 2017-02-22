@@ -4,11 +4,9 @@
   flex-wrap: wrap;
 }
 
-.taglist li, .tag {
-  padding: $content-padding;
-  margin: $content-margin;
+.taglist li {
   background-color: $color-white;
   background-clip: border-box;
   font-weight: $font-weight;
-
+  text-transform: uppercase;
 }
