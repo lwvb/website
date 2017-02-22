@@ -14,6 +14,10 @@ header .small {
   }
 }
 
+header .medium {
+  flex: 2;
+}
+
 header .big{
   flex: 3;
 }
