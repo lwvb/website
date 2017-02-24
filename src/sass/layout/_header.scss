@@ -5,7 +5,6 @@ header {
   @include media('<tablet') {
     padding: 0 5%;
   }
-  margin-top: $content-margin-vertical;
   margin-bottom: $content-margin-vertical;
 }
 
@@ -25,10 +24,29 @@ header .big{
 }
 
 header > :nth-child(even) {
-  padding-left: 10%;
+  padding-right: 10%;
 }
 
-header .taglist li, header .menu a {
+header .taglist li{
   margin-right: $content-margin-vertical;
 }
 
+.main-menu {
+  background: $color-white;
+  width: 100%;
+  color: $color-secondary;
+  text-align: center;
+  box-shadow: 0 0 7px $color-black;
+  margin-bottom: $content-margin-vertical;
+}
+
+ .main-menu > * {
+  background: transparent;
+  margin-top: 0;
+  margin-left: ($content-margin-vertical/4);
+  margin-right: ($content-margin-vertical/4);
+  padding: 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 120%;
+}
