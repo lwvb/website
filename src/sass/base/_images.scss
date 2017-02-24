@@ -5,3 +5,13 @@ img {
 img.circle {
   border-radius: 50%;
 }
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.images * {
+  flex: 1;
+}

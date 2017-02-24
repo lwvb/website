@@ -1,4 +1,5 @@
 main {
+  margin-top: $content-margin-vertical;
   margin-bottom: $content-margin-vertical;
   padding: 0 10%;
 	@include media('<tablet') {
