@@ -1,0 +1,32 @@
+<header>
+	<div class="big">
+		<h1 class="component">{{ title }}</h1>
+		<ul class="taglist">
+			<li class="component"><a href="#">#travel</a></li>
+		</ul>
+	</div>
+	<div class="medium">
+		<a href="{{ image }}" class="lightbox-open">
+			<img class="component" src="{{ image }}">
+		</a>
+	</div>
+</header>
+
+<main>
+	<article class="component">
+    {{#each content}}
+      {{#if text}}
+        <p>{{ text }}</p>
+      {{/if}}
+      {{#if images}} 
+      	<div class="images">
+          {{#each images}}
+            <a href="{{ url }}" class="lightbox-open">
+              <img class="component" src="{{ url }}" alt="{{ title }}">
+            </a>
+          {{/each}}
+        </div>
+      {{/if}}
+    {{/each}}
+	</article>
+</main>
