@@ -1,0 +1,144 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>homepage - Leendert van Beelen</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro" rel="stylesheet">
+</head>
+
+<body>
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>	<symbol id="icon-cancel-circle" viewBox="0 0 32 32">
+<title>cancel-circle</title>
+<path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z"></path>
+<path d="M21 8l-5 5-5-5-3 3 5 5-5 5 3 3 5-5 5 5 3-3-5-5 5-5z"></path>
+</symbol>
+</defs>
+</svg>
+
+
+<div class="container">
+  <nav class="main-menu">
+		<a href="/">Home</a>
+		<span>|</span>
+		<a href="https://www.instagram.com/leendertvanbeelen/">Instagram</a>
+		<span>|</span>
+		<a href="https://github.com/lwvb">github</a>
+	</nav>
+
+  <header>
+	<div class="big">
+		<h1 class="component">Hi, I am Leendert van Beelen</h1>
+		<p class="component">Software developer, traveller, photographer, exploring creativity. I like to make things: a nice dinner, a beautiful picture or an amazing website. Learning new things is a second nature to me, I like to do things I haven't done before.</p>
+		<ul class="taglist ">
+			<li class="component">#design</li>
+			<li class="component">#programming</li>
+			<li class="component">#photography</li>
+			<li class="component">#travel</li>
+		</ul>
+	</div>
+	<div class="small">
+		<img src="/images/IMG_1523.JPG" alt="Leendert van Beelen drinking coffee" class="circle component">
+	</div>
+</header>
+
+
+<main class="gridlist">
+ 	  <article class="gridlist-item component">
+      <h2><a href="van-zomer-naar-winter.html">Van zomer naar winter</a></h2>
+					<a href="van-zomer-naar-winter.html">
+						<img src="/11/van-zomer-naar-winter/zonsondergang-malaga.jpg">
+					</a>
+      <!--<ul class="taglist">
+        <li><a href="#">#</a></li>
+      </ul>-->
+    </article>
+ 	  <article class="gridlist-item component">
+      <h2><a href="zwitserse-bergen.html">Zwitserse Bergen</a></h2>
+					<a href="zwitserse-bergen.html">
+						<img src="/09/mooie-zwiterse-bergen/bergen-wandelbordjes.jpg">
+					</a>
+      <!--<ul class="taglist">
+        <li><a href="#">#</a></li>
+      </ul>-->
+    </article>
+ 	  <article class="gridlist-item component">
+      <h2><a href="spaanse-zon.html">Spaanse zon</a></h2>
+					<a href="spaanse-zon.html">
+						<img src="/09/spaanse-zon/park.jpg">
+					</a>
+      <!--<ul class="taglist">
+        <li><a href="#">#</a></li>
+      </ul>-->
+    </article>
+ 	  <article class="gridlist-item component">
+      <h2><a href="een-goed-begin.html">Een goed begin</a></h2>
+					<a href="een-goed-begin.html">
+						<img src="/09/een-goed-begin/start.jpg">
+					</a>
+      <!--<ul class="taglist">
+        <li><a href="#">#</a></li>
+      </ul>-->
+    </article>
+ 	  <article class="gridlist-item component">
+      <h2><a href="compostella-gehaald.html">Compostella gehaald!</a></h2>
+					<a href="compostella-gehaald.html">
+						<img src="/10/compostella-gehaald/zonsopgang-a-fonsagrada.jpg">
+					</a>
+      <!--<ul class="taglist">
+        <li><a href="#">#</a></li>
+      </ul>-->
+    </article>
+ 	  <article class="gridlist-item component">
+      <h2><a href="camino-primitivo.html">Camino Primitivo</a></h2>
+					<a href="camino-primitivo.html">
+						<img src="/10/camino-primitivo/richting-aanwijzer.jpg">
+					</a>
+      <!--<ul class="taglist">
+        <li><a href="#">#</a></li>
+      </ul>-->
+    </article>
+	<!--<div class="gridlist-item image component">
+		<img src="https://instagram.fsbz1-2.fna.fbcdn.net/t51.2885-15/e35/16229120_851945964946373_5820326747945566208_n.jpg?ig_cache_key=MTQzMzUxOTIyODc3Nzk1Njg1OQ%3D%3D.2">
+		<p class="caption">Lazy Sunday #coffee #genieten #cafefrei</p>-->
+	</div>
+</main>
+</div>
+
+<div class="lightbox-container">
+
+	<div class="lightbox-content" style="background-image: url('');">
+		<a class="lightbox-close" href="#close-lightbox">
+			<svg class="icon icon-cancel-circle"><use xlink:href="#icon-cancel-circle"></use></svg>
+		</a>
+	</div>
+</div>
+
+<script>
+function closeLightbox(event) {
+	document.body.classList.remove('lightbox-active');
+	event.preventDefault();
+}
+function openLightbox(event) {
+	document.body.classList.add('lightbox-active');
+	document.getElementsByClassName('lightbox-content')[0].style = "background-image: url('" + this.href + "');";
+	event.preventDefault();
+}
+
+function addClickListenerToElementsWithClassName(className, callback) {
+	var elementCollection = document.getElementsByClassName(className);
+	for (var i = 0; i < elementCollection.length; i++) {
+			elementCollection[i].addEventListener('click', callback, false);
+	}
+}
+
+addClickListenerToElementsWithClassName('lightbox-container', closeLightbox);
+addClickListenerToElementsWithClassName('lightbox-open', openLightbox);
+
+</script>
+
+</body>
+
+</html>

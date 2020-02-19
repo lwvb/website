@@ -1,0 +1,69 @@
+.intro {
+	height: 300px;
+	text-align: center;
+	background-image: url("/images/bg_2048.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	overflow: visible;
+}
+
+@media (max-width: 1024px;) {
+	.intro {
+		background-image: url("/images/bg_1024.jpg");
+	}
+}
+
+.post .intro {
+	text-align: left;
+	padding: 4em;
+}
+
+.btn-large {
+	font-size: 3em;
+}
+
+header container {
+	position: absolute;
+	z-index: 20;
+}
+
+main .container {
+	padding-top: 1em;
+}
+
+.post main .container {
+	margin-top: -300px;
+}
+
+.post p {
+	padding-bottom: 1em;
+}
+
+.autoscale {
+	width: 100%;
+}
+
+.right-in-text {
+	float: right;
+	width: 50%;
+}
+
+@media (max-width: 1024px;) {
+	.right-in-text {
+		width: 100%;
+		float: none;
+	}
+}
+
+.home .card {
+	margin: 1em;
+}
+
+footer {
+	padding-bottom: 1em;
+}
+
+a {
+	color: FF5722;
+}
